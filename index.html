@@ -49,6 +49,7 @@
         $('#medifinder_table').DataTable({
             "processing": true,
             ajax: 'js/database.json',
+            "order": [[ 8, "asc" ]],
             "columns": [
                 { "data": "Sigla da IES" },
                 { "data": "Nome da IES" },
