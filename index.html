@@ -10,16 +10,20 @@
     <table id="medifinder_table" class="display" style="width:100%">
         <thead>
             <tr>
-                <th>Column</th>
-                <th>Column</th>
+                <th>Sigla</th>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th>Situaçao</th>
+                <th>Vagas</th>
+                <th>Horas</th>
+                <th>Tipo</th>
+                <th>Turno</th>
+                <th>Município</th>
+                <th>UF</th>
+                <th>Fundado</th>
+
             </tr>
             </thead>
-            <tfoot>
-                <tr>
-                    <th>Column</th>
-                    <th>Column</th>
-                </tr>
-                </tfoot>
             </table>
 
     
@@ -27,10 +31,19 @@
         $(document).ready( function () {
         $('#medifinder_table').DataTable({
             "processing": true,
-            ajax: 'https://marceltanuri.github.io/medifinder/js/database.json',
+            ajax: 'js/database.json',
             "columns": [
-                { "data": "Grau" },
-                { "data": "Modalidade" }
+                { "data": "Sigla da IES" },
+                { "data": "Nome da IES" },
+                { "data": "Categoria Administrativa" },
+                { "data": "Situação do Curso" },
+                { "data": "Quantitativo de Vagas - Integral" },
+                { "data": "Carga Horária" },
+                { "data": "Tipo de Periodicidade" },
+                { "data": "Integralização - Turno Integral" },
+                { "data": "Município" },
+                { "data": "UF" },
+                { "data": "Início Funcionamento" }
         ]
         });
     } );
