@@ -1,5 +1,4 @@
-[
-  {
+{"data" : [ {
     "Código da IES": 3974,
     "Sigla da IES": "FESURV",
     "Nome da IES": "UNIVERSIDADE DE RIO VERDE",
@@ -19440,3 +19439,4 @@
     "Área Geral CINE": "Saúde e bem-estar"
   }
 ]
+}
