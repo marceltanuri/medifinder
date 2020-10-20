@@ -11,4 +11,14 @@
             console.log(json); // this will show the info it in firebug console
         });
     </script>
+    <div id="medifinder_table"></div>
+
+    
+    <script>
+        $(document).ready( function () {
+        $('#medifinder_table').DataTable({
+            ajax: 'js/database.json'
+        });
+    } );
+    </script>
 </body>
