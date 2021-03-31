@@ -1,6 +1,8 @@
-var connect = require('connect');
-var serveStatic = require('serve-static');
+const express = require('express')
+const path = require('path')
+const PORT = process.env.PORT || 5000
 
-connect()
-.use(serveStatic("src"))
-.listen(8080, () => console.log('Server running on 8080...'));
+express()
+  .use(express.static(path.join(__dirname, 'src')))
+  .get('/', (req, res) => res.render('src/index.html'))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
